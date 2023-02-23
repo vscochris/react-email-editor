@@ -48,7 +48,7 @@ const EmailEditor = (props: Props, ref: React.ForwardedRef<EditorRef>) => {
     setEditor(
       unlayer.createEditor({
         id: editorId.current,
-        displayMode: 'email',
+        options.displayMode || 'email',
         ...options,
         source: {
           name: pkg.name,
